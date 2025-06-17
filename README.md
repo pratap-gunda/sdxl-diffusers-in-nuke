@@ -24,13 +24,17 @@ Now we have have everything required in nuke python env.
 3. Once we install all the modules go to https://huggingface.co/ and create account if not having one.
 4. After creating account visit https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 5. Request for access. after authentication we get the access to repo.
-6. Open script editor in nuke and direclty copy code from our nuke_ghibli_sdxl_example.py and paste in nuke script editor.
-7. Change cache directories in the code to desired locations. example - cache_dir=r"D:\hf_diffusion_cache\huggingface\hub"
-8. Hit cntrl+a in script editor and cntrl+enter to run the script.
-9. It will create a node called ghibli_stylizer. connect it to read node which You want to conver and hit run button on ghibli_stylizer node.
-10. It will start downloading models directly from Huggingface. they are very large in size so it takes time.
-11. We can check the process in nuke terminal.
-12. Once it gets all the models downloaded, It will generate image and load in a read node.
+6. 1. Clone this repo:
+    ```bash
+    git clone https://github.com/pratap-gunda/sdxl-diffusers-in-nuke.git
+    ```
+7. Open script editor in nuke and direclty copy code from our nuke_ghibli_sdxl_example.py and paste in nuke script editor.
+8. Change cache directories in the code to desired locations. example - cache_dir=r"D:\hf_diffusion_cache\huggingface\hub"
+9. Hit cntrl+a in script editor and cntrl+enter to run the script.
+10. It will create a node called ghibli_stylizer. connect it to read node which You want to conver and hit run button on ghibli_stylizer node.
+11. It will start downloading models directly from Huggingface. they are very large in size so it takes time.
+12. We can check the process in nuke terminal.
+13. Once it gets all the models downloaded, It will generate image and load in a read node.
 
 ## Upcoming Features-
 GUI to type the prompts and adjust settings like strength, inference_steps.
