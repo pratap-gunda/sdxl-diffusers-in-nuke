@@ -1,0 +1,6 @@
+torch
+PIL 
+diffusers 
+controlnet_aux
+accelerate
+torchvision
